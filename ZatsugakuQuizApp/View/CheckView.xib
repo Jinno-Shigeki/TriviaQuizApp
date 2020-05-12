@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CheckView" customModule="ZatsugakuQuizApp" customModuleProvider="target">
+            <connections>
+                <outlet property="answerImage" destination="ZTl-jJ-t3W" id="kh1-b0-BDF"/>
+                <outlet property="answerLabel" destination="YaZ-1R-J1G" id="eib-1j-eQN"/>
+                <outlet property="nextButton" destination="SPn-VL-XoV" id="JgY-Pr-vDz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="答え" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YaZ-1R-J1G">
+                    <rect key="frame" x="25" y="523" width="364" height="80"/>
+                    <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="G7J-cw-nfl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZTl-jJ-t3W">
+                    <rect key="frame" x="30" y="94" width="354" height="419"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPn-VL-XoV">
+                    <rect key="frame" x="120" y="678" width="174" height="48"/>
+                    <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <state key="normal" title="次へ">
+                        <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ZTl-jJ-t3W" secondAttribute="trailing" constant="30" id="3Uh-sy-0C3"/>
+                <constraint firstItem="YaZ-1R-J1G" firstAttribute="top" secondItem="ZTl-jJ-t3W" secondAttribute="bottom" constant="10" id="59g-zp-L7y"/>
+                <constraint firstItem="YaZ-1R-J1G" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="9Eh-Wg-LSf"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="SPn-VL-XoV" secondAttribute="bottom" constant="136" id="A5N-1U-zpz"/>
+                <constraint firstItem="ZTl-jJ-t3W" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ITO-jw-gcc"/>
+                <constraint firstItem="YaZ-1R-J1G" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="25" id="LOr-mF-I0b"/>
+                <constraint firstItem="SPn-VL-XoV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="120" id="M4z-XJ-C18"/>
+                <constraint firstItem="ZTl-jJ-t3W" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="Ted-63-ByA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="YaZ-1R-J1G" secondAttribute="trailing" constant="25" id="Vmb-DK-zDD"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="SPn-VL-XoV" secondAttribute="trailing" constant="120" id="b1k-vn-bU9"/>
+                <constraint firstItem="SPn-VL-XoV" firstAttribute="top" secondItem="YaZ-1R-J1G" secondAttribute="bottom" constant="75" id="cbS-xa-BLJ"/>
+                <constraint firstItem="SPn-VL-XoV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="gP1-4s-qoS"/>
+                <constraint firstItem="ZTl-jJ-t3W" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="50" id="k8p-Np-HX7"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="106.47321428571428"/>
+        </view>
+    </objects>
+</document>

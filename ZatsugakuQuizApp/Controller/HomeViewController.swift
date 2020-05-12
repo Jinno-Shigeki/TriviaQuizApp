@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class HomeViewController: UIViewController {
 
 
     @IBOutlet weak var collectionView: UICollectionView!
@@ -27,23 +27,24 @@ class FirstViewController: UIViewController {
 
     func cellLayout(){
         let cellLayout = UICollectionViewFlowLayout()
-            cellLayout.minimumLineSpacing = 50
+            cellLayout.minimumLineSpacing = 30
             cellLayout.itemSize = CGSize(width: 120, height: 120)
-            cellLayout.sectionInset = UIEdgeInsets(top: 30, left: 10, bottom: 30, right: 10)
+            cellLayout.sectionInset = UIEdgeInsets(top: 30, left: 20, bottom: 30, right: 20)
         collectionView.collectionViewLayout = cellLayout
     }
 }
 //MARK: - UICollectionViewDelegate
-extension FirstViewController: UICollectionViewDelegate {
+extension HomeViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let storyboard: UIStoryboard = self.storyboard!
         let nextView = storyboard.instantiateViewController(withIdentifier: "QuizViewController") as! QuizViewController
         nextView.cellTitleName = cellTitle[indexPath.row]
+        nextView.modalPresentationStyle = .fullScreen
         self.present(nextView, animated: true, completion: nil)
     }
 }
 //MARK: -UICollectionViewDataSource
-extension FirstViewController: UICollectionViewDataSource {
+extension HomeViewController: UICollectionViewDataSource {
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return cellTitle.count
     }

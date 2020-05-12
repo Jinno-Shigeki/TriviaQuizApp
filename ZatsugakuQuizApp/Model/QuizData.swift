@@ -10,9 +10,10 @@ import Foundation
 
 struct QuizData {
     var question: String
-    var answer: String
+    var answer: Int
     var choice1: String
     var choice2: String
     var choice3: String
     var choice4: String
+    let answerText: String
 }
