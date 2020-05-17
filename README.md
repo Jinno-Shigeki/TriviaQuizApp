@@ -7,4 +7,4 @@ Udemyで学習したことを元に一からオリジナルアプリの作成に
 問題のデータはfirestoreに格納しています。選ばれたジャンルにあるfirestoreのデータを読み込み、ランダムに四択の問題を表示しています。
 
 #デモ動画
-https://github.com/Jinno-Shigeki/TriviaQuizApp/issues/1#issue-619411063
+https://user-images.githubusercontent.com/63356965/82150119-f6b62200-9892-11ea-9f14-1ae5d61b055b.gif
